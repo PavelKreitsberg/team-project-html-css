@@ -1,7 +1,13 @@
-/*
- * Главный файл стилей.
- * Все паршалы подключаются сюда.
- */
+// Global veriables, elements
+@import './global';
 
-// Стили для файла с примером HTML-фрагмента
-@import './example';
+// Section`s style
+
+@import './header';
+@import './menu';
+@import './aboutUs';
+@import './program';
+@import './reviews';
+@import './registration';
+@import './contact';
+@import './footer';
