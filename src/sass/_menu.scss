@@ -1,0 +1,34 @@
+.menu-title {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 1.27;
+
+    margin-bottom: 8px;
+}
+
+.menu-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.25;    
+    text-align: center;
+
+    margin-bottom: 32px;
+}
+
+.menu-button {
+    margin: 0 auto 40px;
+}
+
+
+.social-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    &__item {
+        margin-right: 16px;
+    }
+    &_item:last-child {
+        margin-right: 0;
+    }
+}

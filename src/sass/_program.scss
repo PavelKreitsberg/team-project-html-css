@@ -1,0 +1,51 @@
+.feature {
+
+    &__item {
+        display: inline-block;
+
+        position: relative;
+        width: 130px;
+        height: 130px;
+        border-radius: 50%;
+        background: #FEF3E4;
+        box-shadow: 0px 4px 4px rgba(171, 129, 108, 0.25);
+    }
+    &__image {
+        position: absolute;
+        transform: translate(25%, -50%);
+    }
+
+    &__text-wrapper {
+        padding: 48px 0 0 0;
+    }
+
+    &__title {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.28;
+        
+        text-align: center;
+        
+        color: #000000;
+
+        margin-bottom: 4px;
+    }
+
+    &__description {
+        font-size: 14px;
+        line-height: 1.21;
+        
+        text-align: center;
+        
+        color: #000000;
+
+        margin-bottom: 8px;
+    }
+    
+    &__logo {
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+
