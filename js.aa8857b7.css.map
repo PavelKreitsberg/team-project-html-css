@@ -1,0 +1,1 @@
+{"version":3,"sources":["sass/_global.scss"],"names":[],"mappings":"AAKA,EACI","file":"js.aa8857b7.css","sourceRoot":"../src","sourcesContent":["$mobile-breakpoint:  320px;\n$tablet-breakpoint: 768px;\n$desctop-breakpoint: 1280px;\n\n\n* {\n    font-family: 'Montserrat', sans-serif;\n}"]}
