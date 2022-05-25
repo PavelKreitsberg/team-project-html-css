@@ -2,3 +2,44 @@
     display: block;
     margin: 0 auto;
 }
+
+.about-us__text--hidden {
+    display: none;
+}
+
+.hide-button__text {
+    font-family: 'Caveat Brush';
+    font-style: normal;
+    font-size: 18px;
+    line-height: 1.28;
+    color: $accent-color;
+
+    text-align: center;
+
+}
+
+.hide-button__open {
+    display: inline-block;
+    margin-top: 16px;
+}
+
+.hide-button__close {
+    display: none;
+}
+
+.about-us__checkbox:checked ~ .about-us__text--hidden {
+    display: block;
+}
+.about-us__checkbox:checked ~ .hide-button__open {
+    display: none;
+}
+
+.about-us__checkbox:checked ~ .hide-button__close {
+    display: inline-block;
+
+    margin-top: 16px;
+}
+
+
+
+

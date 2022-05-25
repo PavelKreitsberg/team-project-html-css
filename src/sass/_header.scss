@@ -1,7 +1,40 @@
+.menu__open-label {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 10;
+    
+}
+.menu__close-label {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 11;
+    display: none;
+}
+
+.nav__list {
+    display: none;
+}
+
 .nav__logo {
     display: block;
     margin: 0 auto;
 }
-.nav__list {
-    display: none;
+
+.menu:checked {
+    & ~ .menu__open-label {
+        display: none;
+    }
+    & ~ .menu__close-label {
+        display: block;
+    }
+
+    & ~ .nav__list {
+        display: block;
+    }
+
+
 }
+
+

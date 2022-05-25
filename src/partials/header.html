@@ -1,6 +1,19 @@
 <header>
     <div class="container">
         <nav class="nav">
+            <input class="menu visually-hidden"type="checkbox" id="burger">
+            <label class="menu__open-label" for="burger">
+                <svg class="menu__open-icon" width="30" height="16">
+                    <use href="./images/sprite.svg#icon-menu-btn" ></use>
+                </svg>
+            </label>
+            <label class="menu__close-label" for="burger">
+                <svg class="menu__close-icon" width="18" height="18">
+                    <use href="./images/sprite.svg#icon-close-menu-btn"></use>
+                </svg>
+            </label>
+
+
             <img class="logo nav__logo" src="./images/logo.svg" width="96" alt="logo">
             
             <ul class="nav__list">
