@@ -37,6 +37,12 @@ a {
     color: inherit;
 }
 
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
 // Body background
 
 body {
@@ -75,6 +81,8 @@ body {
     border: 0px;
     border-radius: 25px;
 
+    margin: 0 auto;
+
     cursor: pointer;
 }
 
@@ -82,6 +90,38 @@ body {
     max-width: $tablet-breakpoint;
     margin: 0 auto;
     padding: 16px 20px;
+}
+
+.active {
+    color: $accent-color;
+}
+
+// Form
+
+.form__field {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form__input {
+    outline: none;    
+
+    width: 100%;
+
+    margin-bottom: 20px;
+
+    border: none;
+
+    cursor: pointer;
+
+    border-bottom: 1px solid $accent-color;
+    
+    &::placeholder {
+        font-size: 16px;
+        line-height: 1.25;
+        color: $second-text-color;
+    }
 }
 
 // Visually-hidden

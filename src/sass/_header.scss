@@ -1,20 +1,40 @@
 .menu__open-label {
+    display: block;
     position: absolute;
     top: 20px;
     right: 20px;
     z-index: 10;
+
+    
     
 }
 .menu__close-label {
+    display: none;
     position: absolute;
     top: 20px;
-    right: 20px;
+    right: 25px;
     z-index: 11;
+}
+
+.menu__wrapper {
     display: none;
 }
 
+
 .nav__list {
     display: none;
+}
+
+.nav__item {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.21;
+    text-align: center;
+    margin-bottom: 45px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
 }
 
 .nav__logo {
@@ -30,11 +50,31 @@
         display: block;
     }
 
-    & ~ .nav__list {
+    & ~ .menu__wrapper {
         display: block;
-    }
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        z-index: 5;
+
+        width: 100%;
+        height: 100vh;
+
+        background-color: rgba(254, 243, 228, 0.9);
 
 
+        & .nav__logo {
+                width: 190px;
+                margin-top: 20px;
+                margin-bottom: 40px;
+            }
+
+        & .nav__list {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }    
 }
-
-

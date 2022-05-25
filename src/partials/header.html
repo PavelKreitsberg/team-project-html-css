@@ -1,10 +1,11 @@
-<header>
-    <div class="container">
-        <nav class="nav">
-            <input class="menu visually-hidden"type="checkbox" id="burger">
+<header class="header">
+    <div class="container header-container">
+        <img class="logo nav__logo" src="./images/logo.svg" width="96" alt="logo">
+        <nav class="nav">            
+            <input class="menu visually-hidden" type="checkbox" id="burger">
             <label class="menu__open-label" for="burger">
                 <svg class="menu__open-icon" width="30" height="16">
-                    <use href="./images/sprite.svg#icon-menu-btn" ></use>
+                    <use href="./images/sprite.svg#icon-menu-btn"></use>
                 </svg>
             </label>
             <label class="menu__close-label" for="burger">
@@ -12,16 +13,16 @@
                     <use href="./images/sprite.svg#icon-close-menu-btn"></use>
                 </svg>
             </label>
-
-
-            <img class="logo nav__logo" src="./images/logo.svg" width="96" alt="logo">
-            
-            <ul class="nav__list">
-                <li class="nav__item"><a class="nav__link" href=""></a>About us</li>
-                <li class="nav__item"><a class="nav__link" href=""></a>Program</li>
-                <li class="nav__item"><a class="nav__link" href=""></a>Reviews</li>
-                <li class="nav__item"><a class="nav__link" href=""></a>Contacts</li>
-            </ul>
+            <div class="menu__wrapper">
+                <img class="logo nav__logo" src="./images/logo.svg" width="96" alt="logo">
+                
+                <ul class="nav__list">
+                    <li class="nav__item active"><a class="nav__link" href="#about-us">About us</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#program">Program</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#reviews">Reviews</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#contact">Contacts</a></li>
+                </ul>
+            </div>
         </nav>
     </div>
 </header>

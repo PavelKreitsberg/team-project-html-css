@@ -1,34 +1,36 @@
 <section class="registration">
-    <div class="container registration-container">
-        <h2 class="title">
-            Registration
-        </h2>
-        <p class="registration__info">
-            May 23, 11:00<br>
-            New York
-        </p>
-        <p class="registration__price">
-            $ 699
-        </p>
-        <p class="registration__call">
-            Apply your personal info
-            for registration
-        </p>
-        <form name="registration" class="form_field">
-            <label>
-                <input type="text" placeholder="Your name">
-            </label>
-            <label>
-                <input type="tel" placeholder="Phone number">
-            </label>
-            <label>
-                <input type="email" placeholder="Email">
-            </label>
-            <button type="submit" class="button">
-                Register
-            </button>
-
-        </form>
-    
+    <div class="container" id="registration">
+        <div class="registration-container">
+            <h2 class="title registration__title">
+                Registration
+            </h2>
+            <div class="registration__text">
+                <p class="registration__info">
+                    May 23, 11:00
+                    New York
+                </p>
+                <p class="registration__price">
+                    $ 699
+                </p>
+            </div>
+            <legend class="legend">
+                Apply your personal info
+                for registration
+            </legend>
+            <form name="registration" class="form__field">
+                <label>
+                    <input class="form__input" type="text" placeholder="Your name">
+                </label>
+                <label>
+                    <input class="form__input" type="tel" placeholder="Phone number">
+                </label>
+                <label>
+                    <input class="form__input" type="email" placeholder="Email">
+                </label>
+                <button type="submit" class="button">
+                    Register
+                </button>
+            </form>
+        </div>
     </div>
 </section>
