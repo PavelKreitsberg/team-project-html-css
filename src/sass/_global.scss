@@ -13,6 +13,10 @@ $main-text-color: rgba(46, 37, 32, 1);
 $second-text-color: rgba(171, 129, 108, 0.5);
 $button-text-color: white;
 
+// Animation Function
+
+$animation-timing-function: cubic-bezier(.25, .1, .25, .1);
+
 // Additional normalizing
 
 * {
@@ -90,6 +94,14 @@ body {
     max-width: $tablet-breakpoint;
     margin: 0 auto;
     padding: 16px 20px;
+
+    @media screen and (min-width: $tablet-breakpoint) {
+        & {
+            max-width: $desctop-breakpoint;
+        }
+        
+        
+    }
 }
 
 .active {
